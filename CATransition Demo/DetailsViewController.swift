@@ -40,6 +40,8 @@ class DetailsViewController: UIViewController {
 
         codeSnippet += "transition.fillMode = kCAFillModeRemoved\n\n"
         codeSnippet += "view.layer.addAnimation(transition, forKey: \"animatedTransition\")"
+
+        codeTextField.text = codeSnippet
     }
 
     @IBAction func dismiss(sender: AnyObject) {
