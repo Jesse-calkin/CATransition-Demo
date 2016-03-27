@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		889A0DAB1CA580FB0006B516 /* TimingCurveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889A0DAA1CA580FB0006B516 /* TimingCurveViewController.swift */; };
+		889A0DAD1CA582AA0006B516 /* CGRectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889A0DAC1CA582AA0006B516 /* CGRectExtensions.swift */; };
 		88BB4E8B1CA1B7CA0029FD94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB4E8A1CA1B7CA0029FD94 /* AppDelegate.swift */; };
 		88BB4E8D1CA1B7CA0029FD94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB4E8C1CA1B7CA0029FD94 /* ViewController.swift */; };
 		88BB4E901CA1B7CA0029FD94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BB4E8E1CA1B7CA0029FD94 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		889A0DAA1CA580FB0006B516 /* TimingCurveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimingCurveViewController.swift; sourceTree = "<group>"; };
+		889A0DAC1CA582AA0006B516 /* CGRectExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectExtensions.swift; sourceTree = "<group>"; };
 		88BB4E871CA1B7CA0029FD94 /* CATransition Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CATransition Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BB4E8A1CA1B7CA0029FD94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88BB4E8C1CA1B7CA0029FD94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				88BB4E8A1CA1B7CA0029FD94 /* AppDelegate.swift */,
 				88BB4E8C1CA1B7CA0029FD94 /* ViewController.swift */,
 				88BB4E8E1CA1B7CA0029FD94 /* Main.storyboard */,
+				889A0DAC1CA582AA0006B516 /* CGRectExtensions.swift */,
+				889A0DAA1CA580FB0006B516 /* TimingCurveViewController.swift */,
 				88BB4E9C1CA1C8E70029FD94 /* DetailsViewController.swift */,
 				88BB4E911CA1B7CA0029FD94 /* Assets.xcassets */,
 				88BB4E931CA1B7CA0029FD94 /* LaunchScreen.storyboard */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				889A0DAB1CA580FB0006B516 /* TimingCurveViewController.swift in Sources */,
 				88BB4E8D1CA1B7CA0029FD94 /* ViewController.swift in Sources */,
+				889A0DAD1CA582AA0006B516 /* CGRectExtensions.swift in Sources */,
 				88BB4E8B1CA1B7CA0029FD94 /* AppDelegate.swift in Sources */,
 				88BB4E9D1CA1C8E70029FD94 /* DetailsViewController.swift in Sources */,
 			);

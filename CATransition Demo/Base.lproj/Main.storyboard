@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -68,6 +69,9 @@
                                 </state>
                                 <connections>
                                     <action selector="animate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x8Q-Hb-bfI"/>
+                                    <segue destination="KDZ-ID-ubD" kind="popoverPresentation" popoverAnchorView="AZ8-2x-lXF" id="ghC-zD-YsM">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01f-On-CJ3" userLabel="Info Button">
@@ -282,7 +286,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nEz-rs-FKT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1275.5" y="368.5"/>
+            <point key="canvasLocation" x="1250.5" y="65.5"/>
+        </scene>
+        <!--Timing Curve View Controller-->
+        <scene sceneID="uDZ-ed-JZL">
+            <objects>
+                <viewController id="KDZ-ID-ubD" customClass="TimingCurveViewController" customModule="CATransition_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tpS-Zt-VuR"/>
+                        <viewControllerLayoutGuide type="bottom" id="WLh-Rm-elE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2YC-Sc-xJd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YtH-QX-1IU">
+                                <rect key="frame" x="16" y="20" width="343" height="343"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kVX-HJ-c3O" userLabel="Handle 2">
+                                        <rect key="frame" x="151" y="0.0" width="40" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jN1-5r-cLU" userLabel="Handle 1">
+                                        <rect key="frame" x="151" y="303" width="40" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YtH-QX-1IU" secondAttribute="height" multiplier="1:1" id="uwn-Ay-PNd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="YtH-QX-1IU" firstAttribute="top" secondItem="tpS-Zt-VuR" secondAttribute="bottom" id="UqZ-s4-b3K"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YtH-QX-1IU" secondAttribute="trailing" id="wHY-qK-tuQ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="YtH-QX-1IU" secondAttribute="leading" id="yvk-CV-QUg"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="curveView" destination="YtH-QX-1IU" id="bFm-UZ-l2K"/>
+                        <outlet property="handle1" destination="jN1-5r-cLU" id="ihK-LU-lD4"/>
+                        <outlet property="handle2" destination="kVX-HJ-c3O" id="dok-f8-VIL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZO0-9s-K9w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1250.5" y="841.5"/>
         </scene>
     </scenes>
     <resources>
